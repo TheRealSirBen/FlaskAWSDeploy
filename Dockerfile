@@ -14,4 +14,4 @@ WORKDIR /opt
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-CMD ["gunicorn", "-b", "0.0.0.:8000", "app:app", "--workers=5"]
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "app:app", "--workers=5"]
