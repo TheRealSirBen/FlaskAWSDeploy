@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 MAINTAINER william.jonahel@minofangle.org
 
 RUN apt-get update -y
-RUN apt-get install python-pip -y
+RUN apt-get install -y python3-pip
 
 # Copy the current directory contents into the container at /app
 COPY . /opt/
